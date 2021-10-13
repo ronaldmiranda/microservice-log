@@ -1,0 +1,11 @@
+microservice-deploys:
+  container:
+    microserviceName: logs
+    image: ronaldmiranda/logs
+    tag: 47c54d2
+    envs:
+      normalEnvs:
+        REDIS_CHANNEL: log_channel
+        REDIS_HOST: redis-queue
+        REDIS_PORT: "6379"
+        ZIPKIN_URL: http://zipkin-svc.zipkin-system.svc.cluster.local:9411/api/v2/spans
