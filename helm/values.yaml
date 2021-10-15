@@ -1,7 +1,7 @@
 microservice-deploys:
   container:
-    microserviceName: logs
-    image: ronaldmiranda/logs
+    microserviceName: logs-api
+    image: ronaldmiranda/logs-api
     tag: 57b91ef
     envs:
       normalEnvs:
