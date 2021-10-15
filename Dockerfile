@@ -7,5 +7,5 @@ RUN pip3 install -r requirements.txt
 
 COPY ./src/main.py .
 
-CMD ["python3","-u","main.py"]
-
+ENTRYPOINT [ "python3" ]
+CMD [ "-u", "main.py" ]

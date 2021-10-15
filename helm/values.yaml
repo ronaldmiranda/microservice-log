@@ -2,7 +2,7 @@ microservice-deploys:
   container:
     microserviceName: logs
     image: ronaldmiranda/logs
-    tag: 99236e9
+    tag: 57b91ef
     envs:
       normalEnvs:
         REDIS_CHANNEL: log_channel
